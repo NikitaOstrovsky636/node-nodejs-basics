@@ -19,7 +19,7 @@ export const list = async () => {
             console.log(files);
         }
     } catch (err) {
-        throw new Error(err);
+        console.log(err);
     }
 };
 

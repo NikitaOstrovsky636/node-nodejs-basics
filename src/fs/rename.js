@@ -20,7 +20,7 @@ export const rename = async () => {
             await renameFile(oldPath, newPath);
         }
     } catch (err) {
-        throw new Error(err);
+        console.log(err);
     }
 };
 

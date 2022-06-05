@@ -26,7 +26,7 @@ export const copy = async () => {
         }
 
     } catch (err) {
-        throw new Error(err);
+        console.log(err);
     }
 };
 

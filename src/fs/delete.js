@@ -18,7 +18,7 @@ export const remove = async () => {
             await rm(filePath);
         }
     } catch (err) {
-        throw new Error(err);
+        console.log(err);
     }
 };
 
