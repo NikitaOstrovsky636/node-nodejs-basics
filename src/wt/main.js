@@ -1,8 +1,7 @@
 import { Worker } from 'worker_threads';
 import {fileURLToPath} from 'url';
-import path, { resolve } from 'path';
+import path from 'path';
 import os from 'os';
-import { rejects } from 'assert';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
