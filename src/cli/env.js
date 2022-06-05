@@ -1,3 +1,15 @@
+import { env } from 'node:process';
+
 export const parseEnv = () => {
-    // Write your code here 
+    const arrayFromEnv = [];
+
+    for(let prop in env) {
+        if (prop.startsWith('RSS_')) {
+            arrayFromEnv.push(`${prop}=${env[prop]}`);
+        }
+    }
+
+    console.log(arrayFromEnv.join('; '));
 };
+
+parseEnv();
